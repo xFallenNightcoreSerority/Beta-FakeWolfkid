@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+const Discord = require('discord.j');
 const client = new Discord.Client();
 const config = require('./config.json');
 
@@ -113,4 +113,5 @@ client.on('message', async message => {
     return message.channel.send(testembed);
    }
    
-});client.login(process.env.BOT_TOKEN);
+});
+client.login(process.env.BOT_TOKEN);
